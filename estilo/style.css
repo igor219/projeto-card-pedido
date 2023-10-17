@@ -1,0 +1,157 @@
+@charset "UTF-08";
+
+:root{
+    --cor00: hsl(225, 100%, 94%);
+    --cor01: hsl(245, 75%, 52%);
+    --cor02: hsl(225, 100%, 98%);
+    --cor03: hsl(224, 23%, 55%);
+    --cor04: hsl(223, 47%, 23%);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body{
+    background: url(../images/pattern-background-desktop.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+}
+
+main{
+    background-color: white;
+    max-width: 416px;
+    border-radius: 16px;
+    box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.274);
+}
+
+main img{
+    width: 100%;
+    border-radius: 16px 16px 0px 0px;
+}
+
+main section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 2rem;
+    width: 100%;
+    height: 100%;
+}
+
+section h1{
+    font-size: 1.5rem;
+   margin-top: 2rem;
+   margin-bottom: 1rem;
+   color: var(--cor04);
+}
+
+section span{
+    color: var(--cor03);
+    text-align: center;
+}
+
+.informations{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: var(--cor02);
+    border-radius: 16px;
+    padding: 1.5rem 1rem;
+    margin: 32px 0;
+}
+
+.music-price{
+    display: flex;
+    align-items: center;
+}
+
+.informations .price{
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+}
+
+.informations img{
+    width: 48px;
+    margin-right: 16px;
+}
+
+.informations a{
+    color: var(--cor01);
+    font-weight: 600;
+    font-size: 90%;
+    transition: all 0.3s;
+}
+
+.informations a:hover{
+    color: var(--cor04);
+    text-decoration: none;
+}
+
+button{
+    cursor: pointer;
+    background-color: var(--cor01);
+    color: white;
+    font-weight: 600;
+    font-size: 95%;
+    border: none;
+    width: 100%;
+    padding: 16px 0;
+    border-radius: 16px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0px 20px 20px rgb(56, 42, 255, 0.2);
+    transition: backgroud 0.3s;
+}
+
+button:hover{
+    background-color: #766CF1;
+}
+
+#cancel-order{
+    text-decoration: none;
+    color: var(--cor03);
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 64px;
+    transition: color 0.3s;
+}
+
+#cancel-order:hover{
+    color: var(--cor04);
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media screen and (max-width: 650px) {
+    body{
+        background: url(../images/pattern-background-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    section{
+        padding: 0 3rem;
+    }
+}
